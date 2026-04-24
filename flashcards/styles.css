@@ -1,0 +1,129 @@
+.hidden{
+  display: none;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  gap: 12px;
+  padding: 14px 16px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.deck-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 1px 2px;
+  margin-top: 8px;
+  border: 1px solid rgb(24, 14, 14);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.card.edit-mode {
+  background-color: #f9f9f9;
+  width: 400px;
+  margin: 10px;
+}
+
+.card.card.game-mode {
+  width: 400px;
+  height: 350px;
+  font-size: 24px;
+}
+
+.card.game-mode .card-text{
+  position: absolute;
+}
+
+.card:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+
+.card-text{
+  /* position: absolute; */
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0px 5px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+  background-color: #f4433697;
+
+}
+
+.add-card-form{
+    display: flex;
+    margin: 10px 0 10px 0;
+    gap: 10px;
+}
+
+.game-buttons button{
+  background-color: #801414;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.current-game{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.input-deckname{
+  margin: 0 5px;
+}
+
+.current-deck{
+  font-weight: 500;
+  border: 2.5px solid black;
+  background-color: #b10e0e;
+}
+
+.deck-button{
+  margin: 10px 5px;
+}
+
+#deckList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
