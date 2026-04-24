@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simon Says Piano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Simon Says Piano</h1>
+    <p class="subtitle">
+      Запоминай последовательность клавиш и повторяй её
+    </p>
+
+    <div class="info-panel">
+      <div class="info-card">
+        <span class="label">Уровень</span>
+        <span id="level">0</span>
+      </div>
+
+      <div class="info-card">
+        <span class="label">Лучший результат</span>
+        <span id="best-score">0</span>
+      </div>
+
+      <div class="info-card">
+        <span class="label">Статус</span>
+        <span id="status">Нажми Start</span>
+      </div>
+    </div>
+
+    <button id="start-btn">Start Game</button>
+
+    <div id="countdown"></div>
+
+    <div class="piano-wrapper">
+      <div class="piano">
+        <button class="key white" data-index="0">C</button>
+        <button class="key black black-1" data-index="1">C#</button>
+
+        <button class="key white" data-index="2">D</button>
+        <button class="key black black-2" data-index="3">D#</button>
+
+        <button class="key white" data-index="4">E</button>
+        <button class="key white" data-index="5">F</button>
+        <button class="key black black-3" data-index="6">F#</button>
+
+        <button class="key white" data-index="7">G</button>
+        <button class="key black black-4" data-index="8">G#</button>
+
+        <button class="key white" data-index="9">A</button>
+        <button class="key black black-5" data-index="10">A#</button>
+
+        <button class="key white" data-index="11">B</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
