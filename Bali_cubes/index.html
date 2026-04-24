@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Игра: Кубики Бали</h1>
+    <div id="layout">
+        <div id="setup">
+            <input type="number" id="playerCount" min="2" max="4" placeholder="Введите кол-во игроков (2-4)">
+            <button onclick="startGame()">Начать игру</button>
+            <p id="error-message" style="color: red;"></p>
+        </div>
+
+                
+        <div id="gameBoard"></div>
+        <div id="cards"></div>
+        <p id="resultDice"></p>
+        <div id="restartContainer"></div>
+        <!-- <button class="decorate-button" id="rollDice"> Бросить кубики</button> -->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

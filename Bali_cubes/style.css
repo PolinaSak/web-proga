@@ -1,0 +1,104 @@
+.decorate-button{
+    background-color: #F5F5DC;
+}
+input{
+  width: 200px;
+}
+#cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+.card {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 3px solid orange;
+  background-color: #ffe5cc;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.card.used {
+  background-color: lightgray;
+  border: 3px solid gray;
+  color: #555;
+}
+
+#gameBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.middle-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.player-area.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.player-area.horizontal {
+  display: flex;
+  gap: 5px;
+}
+
+#centerArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#layout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+#leftSide {
+  flex: 1;
+}
+
+#rightSide {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.player-block {
+  margin-bottom: 25px;
+}
+
+.player-cards {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.player-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.rollDice {
+  margin-top: auto; 
+  width: 120px;
+}
+
+#resultDice {
+  min-height: 110px;
+}
